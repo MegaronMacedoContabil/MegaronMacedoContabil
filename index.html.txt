@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megaron Macedo Assessoria Contábil | Natal - RN</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        .bg-primary-custom {
+            background-color: #0F2C59;
+        }
+        .text-primary-custom {
+            color: #0F2C59;
+        }
+        .bg-secondary-custom {
+            background-color: #F8F9FA;
+        }
+        .btn-accent {
+            background-color: #D4AF37;
+            color: #fff;
+            font-weight: 600;
+        }
+        .btn-accent:hover {
+            background-color: #C19B2E;
+            color: #fff;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(15, 44, 89, 0.9), rgba(15, 44, 89, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+        }
+        .card-service {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .card-service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: #E9ECEF;
+            color: #0F2C59;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5584998000310?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis." class="whatsapp-float" target="_blank" title="Fale pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-calculator me-2"></i>Megaron Macedo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#credenciais">Credenciais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <a href="https://wa.me/5584998000310" target="_blank" class="btn btn-accent ms-lg-3">Fale Conosco</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-3">Gestão Contábil Eficiente para o seu Negócio Crescer</h1>
+                    <p class="lead mb-4">Soluções completas em Assessoria Contábil e Consultoria em Gestão Empresarial com mais de 9 anos de experiência e registro profissional ativo.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="https://wa.me/5584998000310" class="btn btn-accent btn-lg"><i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento</a>
+                        <a href="#servicos" class="btn btn-outline-light btn-lg">Nossos Serviços</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumo de Estatísticas/Diferenciais -->
+    <section class="py-4 bg-primary-custom text-white border-top border-secondary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h3 class="fw-bold mb-0">+9 Anos</h3>
+                    <p class="mb-0 text-light">De Atuação no Mercado</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h3 class="fw-bold mb-0">CRC RN-000897/O</h3>
+                    <p class="mb-0 text-light">Registro Profissional Regularizado</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fw-bold mb-0">100% Legalizado</h3>
+                    <p class="mb-0 text-light">Especialistas em Simples Nacional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="text-primary-custom fw-bold text-uppercase">Sobre a Empresa</span>
+                    <h2 class="fw-bold mb-3">Megaron Macedo Assessoria Contábil</h2>
+                    <p class="text-muted">Fundada em janeiro de 2017 em Natal - RN, a <strong>Megaron Macedo Assessoria Contábil</strong> oferece soluções precisas e estratégicas para micro e pequenas empresas.</p>
+                    <p class="text-muted">Nosso compromisso é descomplicar as obrigações fiscais, societárias e trabalhistas da sua empresa, garantindo que você tenha tranquilidade para focar no crescimento da sua atividade principal.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Atendimento personalizado e ágil</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Conformidade fiscal e tributária</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Acompanhamento em gestão empresarial</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-secondary-custom p-4 border-0 rounded-3">
+                        <h4 class="fw-bold text-primary-custom mb-3"><i class="fas fa-bullseye me-2"></i>Nossa Missão</h4>
+                        <p class="text-muted">Proporcionar tranquilidade contábil e consultoria estratégica de excelência aos empreendedores, impulsionando a sustentabilidade e rentabilidade dos negócios através de uma parceria sólida e transparente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5 bg-secondary-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary-custom fw-bold text-uppercase">O que Fazemos</span>
+                <h2 class="fw-bold">Nossos Serviços Especializados</h2>
+                <p class="text-muted">Atuações pautadas nos CNAEs oficiais de Contabilidade e Consultoria em Gestão.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h5 class="fw-bold">Atividades de Contabilidade</h5>
+                        <p class="text-muted">Escrituração contábil diária, emissão de balancetes, balanços patrimoniais e DRE com total precisão legal e fiscal.</pAqui está a estrutura completa de uma **landing page profissional (index.html)** responsiva, moderna e otimizada para conversão, utilizando **Bootstrap 5**, **Bootstrap Icons** e CSS customizado com uma paleta de cores elegante para escritório de contabilidade (Azul Marinho e Dourado/Amarelo Muted).
+
+O código inclui todas as informações da **Megaron Macedo Assessoria Contábil**, incluindo botões diretos de **WhatsApp** e **E-mail**, serviços detalhados e rodapé com dados cadastrais e registro no **CRC-RN**.
+
+### Código `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megaron Macedo Assessoria Contábil | Natal - RN</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css)" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css)">
+  <!-- Google Fonts -->
+  <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap)" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0d233a; /* Azul Marinho Corporativo */
+      --secondary-color: #1a4168;
+      --accent-color: #c5a059; /* Dourado / Bronze Elegante */
+      --light-bg: #f8f9fa;
+      --text-dark: #2b2b2b;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background-color: #ffffff;
+    }
+
+    /* Topbar */
+    .topbar {
+      background-color: var(--primary-color);
+      color: #fff;
+      font-size: 0.875rem;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--primary-color);
+      letter-spacing: -0.5px;
+    }
+    .navbar-brand span {
+      color: var(--accent-color);
+    }
+    .nav-link {
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    .nav-link:hover {
+      color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, rgba(13, 35, 58, 0.92), rgba(26, 65, 104, 0.88)),
+                  url('[https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80)') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 0;
+    }
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: #e0e0e0;
+    }
+
+    /* Botoes Customizados */
+    .btn-accent {
+      background-color: var(--accent-color);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      padding: 12px 28px;
+    }
+    .btn-accent:hover {
+      background-color: #b08d47;
+      color: #fff;
+    }
+    .btn-outline-light-custom {
+      border: 2px solid #fff;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 28px;
+    }
+    .btn-outline-light-custom:hover {
+      background-color: #fff;
+      color: var(--primary-color);
+    }
+
+    /* Service Cards */
+    .service-card {
+      border: 1px solid #eef1f5;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      background-color: rgba(197, 160, 89, 0.15);
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: var(--light-bg);
+    }
+    .badge-custom {
+      background-color: rgba(13, 35, 58, 0.1);
+      color: var(--primary-color);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    /* Stat Box */
+    .stat-box {
+      border-left: 4px solid var(--accent-color);
+      padding-left: 15px;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #eef1f5;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: #b0c4de;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Informações Superior -->
+  <div class="topbar py-2 d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-geo-alt-fill text-warning me-1"></i> Av. Lima e Silva, 1539 - Lagoa Nova, Natal/RN
+        <span class="ms-3"><i class="bi bi-shield-check text-warning me-1"></i> CRC: RN-000897/O</span>
+      </div>
+      <div>
+        <a href="tel:84998000310" class="text-white text-decoration-none me-3">
+          <i class="bi bi-telephone-fill me-1"></i> (84) 99800-0310
+        </a>
+        <a href="mailto:mariano@tmaenergiasolar.com" class="text-white text-decoration-none">
+          <i class="bi bi-envelope-fill me-1"></i> mariano@tmaenergiasolar.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand py-2" href="#">
+        MEGARON MACEDO <span>ASSESSORIA CONTÁBIL</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a href="[https://wa.me/5584998000310?text=Olá,%20gostaria%20de%20uma%20consultoria%20contábil](https://wa.me/5584998000310?text=Olá,%20gostaria%20de%20uma%20consultoria%20contábil)." target="_blank" class="btn btn-accent btn-sm rounded-pill px-3">
+              <i class="bi bi-whatsapp me-1"></i> Fale pelo WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner Principal -->
+  <header id="inicio" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="badge badge-custom text-white bg-warning text-dark mb-3">Desde 2017 em Natal - RN</span>
+          <h1 class="hero-title mb-3">Gestão Contábil Estratégica para o Sucesso do Seu Negócio</h1>
+          <p class="hero-subtitle mb-4">
+            Transformamos dados contábeis em inteligência para a tomada de decisões da sua empresa, garantindo conformidade fiscal e eficiência orçamentária.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="[https://wa.me/5584998000310?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços](https://wa.me/5584998000310?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços)." target="_blank" class="btn btn-accent rounded-pill">
+              <i class="bi bi-chat-dots-fill me-2"></i> Solicitar Orçamento
+            </a>
+            <a href="#servicos" class="btn btn-outline-light-custom rounded-pill">Conhecer Serviços</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre" class="about-section py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge badge-custom mb-2">Tradição & Confiança</span>
+          <h2 class="fw-bold mb-4" style="color: var(--primary-color);">Mais de 9 Anos de Experiência e Eficiência Contábil</h2>
+          <p class="text-muted">
+            Fundada em janeiro de 2017, a <strong>Megaron Macedo Assessoria Contábil</strong> é referência em Natal/RN no suporte e desenvolvimento de micro e pequenas empresas.
+          </p>
+          <p class="text-muted">
+            Atuamos fortemente na **Contabilidade Geral** e na **Consultoria em Gestão Empresarial**, oferecendo soluções personalizadas sob o regime do Simples Nacional para otimizar seus tributos e potencializar seus resultados.
+          </p>
+          
+          <div class="row mt-4 g-3">
+            <div class="col-6">
+              <div class="stat-box">
+                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">Simples Nacional</h4>
+                <small class="text-muted">Especialistas no Regime</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box">
+                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">CRC RN-000897/O</h4>
+                <small class="text-muted">Registro Regularizado</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm border">
+            <h5 class="fw-bold mb-3" style="color: var(--primary-color);"><i class="bi bi-info-circle text-warning me-2"></i>Resumo Cadastral</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><strong>Razão Social:</strong> Megaron Montanaro Batista de Macedo</li>
+              <li class="py-2 border-bottom"><strong>Nome Fantasia:</strong> Megaron Macedo Assessoria Contábil</li>
+              <li class="py-2 border-bottom"><strong>CNPJ:</strong> 26.796.013/0001-02</li>
+              <li class="py-2 border-bottom"><strong>Porte:</strong> Micro Empresa (ME)</li>
+              <li class="py-2 border-bottom"><strong>Opção Tributária:</strong> Simples Nacional</li>
+              <li class="py-2"><strong>Natureza Jurídica:</strong> Empresário Individual</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <span class="badge badge-custom mb-2">Áreas de Atuação</span>
+        <h2 class="fw-bold" style="color: var(--primary-color);">Nossas Soluções Especializadas</h2>
+        <p class="text-muted">Tudo o que sua empresa precisa para manter as obrigações em dia e focar no crescimento.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Serviço 1 (CNAE Principal) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Atividades de Contabilidade</h5>
+            <p class="text-muted">
+              Apuração de tributos, demonstrativos contábeis (DRE, Balanço Patrimonial), cumprimento de obrigações acessórias e regularidade fiscal contínua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Serviço 2 (CNAE Secundário) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Consultoria em Gestão</h5>
+            <p class="text-muted">
+              Planejamento estratégico e orientação para otimização de custos, melhoria de processos internos e crescimento sustentável da sua empresa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-piggy-bank"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Planejamento Tributário</h5>
+            <p class="text-muted">
+              Análise e enquadramento no Simples Nacional com foco em redução legal da carga tributária para microempresas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Serviço 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Departamento Pessoal</h5>
+            <p class="text-muted">
+              Gestão de folha de pagamento, férias, eSocial, rescisões e assessoria completa no cumprimento das leis trabalhistas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Serviço 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Abertura e Regularização</h5>
+            <p class="text-muted">
+              Suporte completo no processo de abertura, alteração contratual, obtenção de licenças e regularização cadastral.
+            </p>
+          </div>
+        </div>
+
+        <!-- Serviço 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 h-100">
+            <div class="icon-box">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Relatórios Financeiros</h5>
+            <p class="text-muted">
+              Emissão de relatórios gerenciais claros para que você acompanhe a saúde financeira da sua empresa mês a mês.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato e Localização -->
+  <section id="contato" class="about-section py-5">
+    <div class="container py-4">
+      <div class="row g-4">
+        <!-- Informações de Contato -->
+        <div class="col-lg-5">
+          <span class="badge badge-custom mb-2">Fale Conosco</span>
+          <h2 class="fw-bold mb-4" style="color: var(--primary-color);">Estamos Prontos para Atender Sua Empresa</h2>
+          <p class="text-muted mb-4">Entre em contato via WhatsApp, telefone ou e-mail. Agende uma conversa com nosso especialista.</p>
+
+          <div class="contact-card p-3 mb-3 d-flex align-items-center">
+            <div class="icon-box me-3 mb-0" style="width: 50px; height: 50px; font-size: 1.3rem;">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">WhatsApp / Telefone</small>
+              <a href="[https://wa.me/5584998000310](https://wa.me/5584998000310)" class="fw-bold text-decoration-none text-dark">(84) 99800-0310</a>
+            </div>
+          </div>
+
+          <div class="contact-card p-3 mb-3 d-flex align-items-center">
+            <div class="icon-box me-3 mb-0" style="width: 50px; height: 50px; font-size: 1.3rem;">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">E-mail</small>
+              <a href="mailto:mariano@tmaenergiasolar.com" class="fw-bold text-decoration-none text-dark">mariano@tmaenergiasolar.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card p-3 d-flex align-items-center">
+            <div class="icon-box me-3 mb-0" style="width: 50px; height: 50px; font-size: 1.3rem;">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">Endereço</small>
+              <span class="fw-bold text-dark">Av. Lima e Silva, 1539, Sala 02, Lagoa Nova<br>Natal/RN - CEP 59075-710</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-lg-7">
+          <div class="h-100 rounded-3 overflow-hidden shadow-sm border" style="min-height: 350px;">
+            <iframe 
+              src="[https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.215433299947!2d-35.2144!3d-5.8236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff881a8ef6fb%3A0x1!2sAv.+Lima+e+Silva%2C+1539+-+Lagoa+Nova%2C+Natal+-+RN%2C+59075-710!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.215433299947!2d-35.2144!3d-5.8236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff881a8ef6fb%3A0x1!2sAv.+Lima+e+Silva%2C+1539+-+Lagoa+Nova%2C+Natal+-+RN%2C+59075-710!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr)" 
+              width="100%" 
+              height="100%" 
+              style="border:0; min-height: 350px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="py-4">
+    <div class="container text-center text-md-start">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6">
+          <h6 class="fw-bold text-white mb-1">Megaron Macedo Assessoria Contábil</h6>
+          <p class="small mb-0">CNPJ: 26.796.013/0001-02 | CRC: RN-000897/O</p>
+          <p class="small text-muted mb-0">Razão Social: Megaron Montanaro Batista de Macedo</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small mb-0">&copy; 2026 Megaron Macedo Assessoria Contábil. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js)"></script>
+</body>
+</html>
